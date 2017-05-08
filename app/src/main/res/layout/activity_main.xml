@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bf.hzplayer.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/aaa"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:gravity="center"
+        android:background="#000000">
+
+        <bf.hzplayer.VideoViewSurfaceView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <bf.hzplayer.UIControler
+            android:id="@+id/uiControler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </bf.hzplayer.UIControler>
+
+    </RelativeLayout>
+
+    <Button
+        android:text="开始"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aaa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:onClick="start"
+        android:id="@+id/start" />
+
+    <Button
+        android:text="Activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start"
+        android:layout_alignStart="@+id/start"
+        android:layout_marginTop="26dp"
+        android:onClick="nextActivity"
+        android:id="@+id/nextVideo" />
+
+</RelativeLayout>
