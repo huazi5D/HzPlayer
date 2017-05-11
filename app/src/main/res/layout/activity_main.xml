@@ -35,6 +35,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="53dp"
         android:onClick="start"
+        android:background="@drawable/title_tab_right"
         android:id="@+id/start" />
 
     <Button

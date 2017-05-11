@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="bf.hzplayer.Activity2"
-    tools:ignore="Orientation">
+    tools:ignore="Orientation"
+    android:orientation="vertical">
 
 
     <SurfaceView
@@ -14,11 +15,12 @@
         android:layout_height="260dp" />
 
     <Button
+        android:layout_margin="20dp"
         android:text="Activity1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/videoView"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:onClick="nextActivity"
+        android:background="@drawable/title_tab_right"
         android:id="@+id/nextActivity" />
 
 </LinearLayout>
