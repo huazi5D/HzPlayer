@@ -1,7 +1,6 @@
 package bf.hzplayer.Json;
 
-import okhttp3.ResponseBody;
-import retrofit2.Call;
+import io.reactivex.Flowable;
 import retrofit2.http.GET;
 
 /**
@@ -13,5 +12,7 @@ import retrofit2.http.GET;
 
 public interface RetrofitInterface {
     @GET("toutiao/index?type=top&key=8c4e06d1f7a4830117377ab85835d62b")
-    Call<ResponseBody> getData();
+//    Call<ResponseBody> getData();//不使用Gson与RxJava
+//    Call<ImageJson> getData();//使用Gson
+    Flowable<ImageJson> getData();//使用Gson与RxJava
 }

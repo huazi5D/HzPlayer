@@ -35,10 +35,6 @@ public class VideoListActivity extends FragmentActivity implements RadioGroup.On
     public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
 
         transaction = getSupportFragmentManager().beginTransaction();
-        /*if (!nVideoListFragment.isAdded())
-            transaction.add(R.id.video_list_fragment, nVideoListFragment);
-        if (!lVideoListFragment.isAdded())
-            transaction.add(R.id.video_list_fragment, lVideoListFragment);*/
 
         switch (checkedId) {
             case R.id.net_button:
